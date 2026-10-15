@@ -1,6 +1,14 @@
+<p align="center">
+
+  <img src="Logo2.svg" alt="Lua Nuclear Reactor Logo" width="400">
+
+</p>
+
+
 # Lua Nuclear Reactor
 
-A Lua-based recreation of Unit 1 from **Realistic Boiling Water Reactor Simulator**.
+A Lua-based recreation of Unit 1 from 
+[**Realistic Boiling Water Reactor Simulator**](https://www.roblox.com/games/11765852158/Realistic-Boiling-Water-Reactor-Simulator).
 
 The goal is to recreate the reactor's systems and their interactions, including reactor physics, emergency cooling, turbine operation, and electrical systems.
 
