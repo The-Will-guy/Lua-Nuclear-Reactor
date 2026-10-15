@@ -19,6 +19,6 @@ The goal is to recreate the reactor's systems and their interactions, including 
 
 <p align="center">
 
-  <img src="Logo.svg" alt="Lua Nuclear Reactor Logo" width="100">
+  <img src="Logo.svg" alt="Lua Nuclear Reactor Logo" width="150">
 
 </p>
