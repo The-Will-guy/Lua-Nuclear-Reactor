@@ -15,3 +15,10 @@ The goal is to recreate the reactor's systems and their interactions, including 
 | Condenser | Planned |
 | Deaerator | Planned |
 | Electrical Panel | Planned |
+
+
+<p align="center">
+
+  <img src="Logo.svg" alt="Lua Nuclear Reactor Logo" width="100">
+
+</p>
