@@ -1,10 +1,12 @@
 
+
+
 local SteamRPMCoefficient = 0.0033262 --Calibrated to 10APRM = 3600rpm
 local TurbineLag = 100 -- A bit of lag? Dunno, it felt right
-local SteamAmount = 0
-local amountBoiled = 225
+local SteamAmount = 0 -- Amout of steam is just steam buildup in the reactor
+local amountBoiled = 225 -- Kg/s coming from the reactor 
 local SteamPressureCoefficient = 0.17 --Or 0.017 idk. Bc we multiply all values with it, the pressure change will scale the same and no change will be present. Will def affect mcc and cond I think since it Modifies the amount of steam in the reactor(See SteamAmount)
-local TurbineValv = true-- 
+local TurbineValv = true -- No switch sadly
 local GenBreaker = false -- Auto synce for the moment
 local TurbineSetting = 19 -- percent
 local BypassSetting = 0   -- percent
@@ -15,8 +17,8 @@ local phase = 0
 local SyncRPM = 3600
 local PhaseCoefficient = 3 -- In the documentation
 local SyncTurbineSteam = 222.39
-local SteamToMW = 209.84868
-local GeneratorLoad = 0
+local SteamToMW = 209.84868 -- SteamToMW = MaxGeneratorLoad /(MaxTurbineSteam/SyncTurbineSteam - 1) if you want
+local GeneratorLoad = 0 
 
 
 
@@ -28,7 +30,7 @@ else return x
 end
 end
 
-for i = 1, 5000 do 
+local function CalcTurbine()
   if RPM < 0.5 then
     RPM = 0
     end
@@ -73,8 +75,11 @@ end
 
   
   --print(SteamAmount, pressure, TotalOutflow)
-  print(RPM, pressure, TurbineSteam, GeneratorLoad)
-
+  --print(RPM, pressure, TurbineSteam, GeneratorLoad)
 
 end
   
+
+for i = 1, 1000 do
+  CalcTurbine()
+  end
