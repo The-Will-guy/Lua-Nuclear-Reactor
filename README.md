@@ -18,9 +18,9 @@ The goal is to recreate the reactor's systems and their interactions, including 
 |---|---|
 | Reactor Physics | Planned |
 | ECCS (Emergency Core Cooling System) | Planned |
-| MCC (Main Cooling Circuit) | In Progress |
+| MCC (Main Cooling Circuit) | Planned |
 | Turbine | Pressure, RPM, synchronisation and flow logic implemented |
-| Condenser | Planned |
+| Condenser | In Progress |
 | Deaerator | Planned |
 | Electrical Panel | Planned |
 
